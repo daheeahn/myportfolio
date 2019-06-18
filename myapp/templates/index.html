@@ -1,0 +1,425 @@
+
+<!DOCTYPE html>
+<html>
+  {% load staticfiles %}
+<head>
+  <title>Portfolio | Dahee Ahn</title>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- css -->
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!--font-awesome-->
+  <script src="https://kit.fontawesome.com/e41ab934bb.js"></script>
+
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" media="screen">
+  <link href="{% static 'color/default.css' %}" rel="stylesheet" media="screen">
+  <script src="{% static 'js/modernizr.custom.js' %}"></script>
+</head>
+
+<body>
+  <div class="menu-area">
+    <div id="dl-menu" class="dl-menuwrapper">
+      <button class="dl-trigger">Open Menu</button>
+      <ul class="dl-menu">
+        <li>
+          <a href="#intro">Home</a>
+        </li>
+        <li><a href="#about">Programming Language</a></li>
+        <li><a href="#services">My Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!-- <li>
+          <a href="#">Sub Menu</a>
+          <ul class="dl-submenu">
+            <li><a href="#">Sub menu</a></li>
+            <li><a href="#">Sub menu</a></li>
+          </ul>
+        </li> -->
+      </ul>
+    </div>
+    <!-- /dl-menuwrapper -->
+  </div>
+
+  <!-- intro area -->
+  <div id="intro">
+
+    <div class="intro-text">
+      <div class="container">
+        <div class="row">
+
+
+          <div class="col-md-12">
+
+            <div class="brand">
+              <h1><a href="{% url 'index' %}">Dahee Ahn</a></h1>
+              <div class="line-spacer"></div>
+              <p><span>개발을 좋아하는 대학생입니다!</p>
+                동덕여대 컴퓨터학과 17학번 안다희
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <!-- About -->
+  <section id="about" class="home-section bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+          <div class="section-heading">
+            <h2>Programming Language</h2>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+          <div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+            <img src="img/team/1.jpg" alt="" class="img-responsive" />
+            <h4>C</h4>
+            <p>From University</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.5s">
+          <div class="box-team wow bounceInDown">
+            <img src="img/team/3.jpg" alt="" class="img-responsive" />
+            <h4>Ruby on Rails</h4>
+            <p>[18.3 ~ 18.8] 멋쟁이 사자처럼 6기</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.3s">
+          <div class="box-team wow bounceInDown">
+            <img src="img/team/2.jpg" alt="" class="img-responsive" />
+            <h4>Java</h4>
+            <p>[18.9 ~ 19.1] Prography 3기</p>
+            <p>
+              태그 기반 책 추천 서비스 <a href="https://play.google.com/store/apps/details?id=org.techtown.just" target="_blank">'오늘 뭐 읽지?'</a> <br> 안드로이드 앱 개발 경험 <br>
+              <a href="https://github.com/prography/book-recommend-android2" target="_blank">Github</a> &nbsp;&nbsp;
+              <a href="http://prography.org/product" target="_blank">Prography</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.7s">
+          <div class="box-team wow bounceInDown">
+            <img src="img/team/4.jpg" alt="" class="img-responsive" />
+            <h4>Python</h4>
+            <p>[19.2 ~ ] 멋쟁이 사자처럼 7기 운영진</p>
+            <p>
+              <a href="https://herethon-music.herokuapp.com/" target="_blank">'노래 신청 서비스'</a> 웹 개발 경험 <br> with Django <br> 
+              <a href="https://github.com/daheeahn/190519_herethon_music" target="_blank">Github</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- spacer -->
+  <section id="spacer1" class="home-section spacer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="color-light">
+            <h2 class="wow bounceInDown" data-wow-delay="1s">프로젝트 소개</h2>
+            <p class="lead wow bounceInUp" data-wow-delay="2s">My Project</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <!-- Services -->
+  <section id="services" class="home-section bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+          <div class="section-heading">
+            
+            <a href="http://prography.org/product" target="_blank"><h2><img width="40" height="40" src="{% static 'img/app_icon.png' %}" alt="..."> 오늘 뭐 읽지?</h2></a>
+            <p>위 링크를 클릭 후 "3기 - 잘했조, 책왓챠!"를 참고해주시면 감사하겠습니다 :)</p>
+            <p>링크 : Prography 포트폴리오</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+          <div class="service-box wow bounceInDown" data-wow-delay="0.1s">
+            <!-- <i class="fa fa-code fa-4x"></i> -->
+            <h4>소개</h4>
+            <p>태그를 선택하면 이를 기반으로 <br> 책을 추천해주는 서비스입니다.</p>
+            <a href="https://play.google.com/store/apps/details?id=org.techtown.just" target="_blank" ><i class="fab fa-google-play fa-3x"></i></a> &nbsp;&nbsp;
+            <a href="https://github.com/prography/book-recommend-android2" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.3s">
+          <div class="service-box wow bounceInDown" data-wow-delay="0.1s">
+            <!-- <i class="fa fa-cog fa-4x"></i> -->
+            <h4>개발 기간 & 인원</h4>
+            <p> - 2018년 9월 ~ 2019년 1월 <br>
+              - 서버 2명 / 딥러닝 1명 / 안드로이드 2명 </p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.5s">
+          <div class="service-box wow bounceInDown" data-wow-delay="0.1s">
+            <!-- <i class="fa fa-desktop fa-4x"></i> -->
+            <h4>맡은 역할 : 안드로이드</h4>
+            <p>안드로이드와 서버를 연결한 후, 데이터를 받아 화면에 출력하는 역할을 맡았습니다.</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.7s">
+          <div class="service-box wow bounceInDown" data-wow-delay="0.1s">
+            <!-- <i class="fa fa-dropbox fa-4x"></i> -->
+            <h4>사용한 API </h4>
+            <p>Retrofit2 & Okhttp3</p>
+          </div>
+        </div>
+
+
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+          <div class="service-box wow bounceInDown" data-wow-delay="0.1s">
+            <!-- <i class="fa fa-code fa-4x"></i> -->
+            <h4>기능 1</h4>
+            <p>원하는 태그들을 선택하고 <br> "태그 선택 완료" 버튼을 누르면<br><br> (로그인 불필요)</p>
+            
+           
+          </div>
+        </div>  
+        
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+          <div class="service-box wow bounceInDown" data-wow-delay="0.1s">       
+            <h4>기능 2</h4>     
+            <p>해당 태그를 '모두' 포함한 책을 <br> 추천해줍니다. 
+              <br> 그리고 '오두막' 책을 클릭하면 <br><br> (로그인 불필요) </p>
+            
+          </div>
+        </div>  
+        
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+          <div class="service-box wow bounceInDown" data-wow-delay="0.1s">       
+            <h4>기능 3</h4>   
+            <p>교보문고에서 크롤링한<br> 책 정보를 제공합니다. <br> [ 제목, 저자, 관련 태그, 줄거리 ;<br>관련 태그는 개발자가 책마다 직접 입력 ] <br><BR> (로그인 불필요)<br> <br> 
+              <br>그리고 V나 ♡를 누르면 읽은 책이나 <br>관심 책으로 저장할 수 있습니다. <br><BR> (로그인 필요) </p>             
+          </div>
+        </div>  
+        
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+          <div class="service-box wow bounceInDown" data-wow-delay="0.1s">       
+            <h4>기능 4</h4>     
+            <p>1, 2번째 이미지에서 사람 모양의 아이콘을 클릭하면 마이페이지로 들어갈 수 있습니다. </P>
+            <p>마이페이지에서는 <br> 읽은 책과 관심 책 목록을 볼 수 있습니다.<br> <br> (로그인 필요)</p>
+
+          </div>
+        </div>  
+
+          
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+          <div class="service-box wow bounceInDown" data-wow-delay="0.1s">
+              <img src="{% static 'img/1_main.png' %}" alt="..." class="img-thumbnail">
+          </div>
+        </div>  
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+          <div class="service-box wow bounceInDown" data-wow-delay="0.1s">
+              <img src="{% static 'img/2_recommend.png' %}" alt="..." class="img-thumbnail">
+          </div>
+        </div>  
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+          <div class="service-box wow bounceInDown" data-wow-delay="0.1s">
+              <img src="{% static 'img/3_detail.png' %}" alt="..." class="img-thumbnail">
+          </div>
+        </div>  
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+          <div class="service-box wow bounceInDown" data-wow-delay="0.1s">
+              <img src="{% static 'img/4_mypage2.png' %}" alt="..." class="img-thumbnail">
+          </div>
+        </div>  
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Contact -->
+  <section id="contact" class="home-section bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-offset-2 col-md-8">
+            <div class="section-heading">
+              
+              <h2> Contact Dahee Ahn </h2>
+            
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.7s">
+            <div class="service-box wow bounceInDown" data-wow-delay="0.1s">
+              <!-- <i class="fa fa-dropbox fa-4x"></i> -->
+              <h4> Contact </h4>
+              <p>Phone | 010-8631-5442</p>
+              <p>Email | deg9810@likelion.org</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            <div class="service-box wow bounceInDown" data-wow-delay="0.1s">
+              <!-- <i class="fa fa-code fa-4x"></i> -->
+              <h4>SNS</h4>
+              <a href="https://web.facebook.com/profile.php?id=100016689436321" target="_blank">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="https://www.instagram.com/deg9810/" target="_blank">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            
+             </div>
+          </div>
+          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.3s">
+            <div class="service-box wow bounceInDown" data-wow-delay="0.1s">
+              <h4>Github</h4>
+              <a href="https://github.com/daheeahn" target="_blank">
+                <span class="fa-stack fa-2x">
+                  <!-- <i class="fa fa-circle fa-stack-2x"></i> -->
+                  <i class="fa fa-github fa-2x"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.5s">
+            <div class="service-box wow bounceInDown" data-wow-delay="0.1s">
+              <h4>Blog</h4>
+              <a href="https://coding-dahee.tistory.com" target="_blank">
+                <i class="fab fa-blogger fa-4x"></i>
+              </a>
+              <br><br>
+              <p>개발 활동을 기록하는 블로그입니다.</p>
+            </div>
+          </div>
+  
+            
+        </div>
+      </div>
+    </section>
+  <!-- <section id="contact" class="home-section bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+          <div class="section-heading">
+            <h2>Contact us</h2>
+            <p>Contact via form below and we will be get in touch with you within 24 hours. </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+
+            <div class="text-center"><button type="submit" class="btn btn-theme btn-lg btn-block">Send Message</button></div>
+          </form>
+
+
+        </div>
+      </div>
+      <div class="row mar-top30 ">
+        <div class="col-md-offset-2 col-md-8">
+          <h4>SNS</h4>
+          <ul class="social-network">
+            <li><a href="https://web.facebook.com/profile.php?id=100016689436321" target="_blank">
+						<span class="fa-stack fa-2x">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+						</span></a>
+            </li>
+            <li><a href="https://www.instagram.com/deg9810/" target="_blank">
+            <span class="fa-stack fa-2x">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+            </span></a>
+            </li>
+            <li><a href="https://coding-dahee.tistory.com/" target="_blank">
+						<span class="fa-stack fa-2x">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-dribbble fa-stack-1x fa-inverse"></i>
+						</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section> -->
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- <p>&copy; Dahee Ahn</p> -->
+          <div class="credits">
+            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Mamba
+            -->
+            Contact Dahee Ahn <br><br>
+            Email | deg9810@likelion.org <br>
+            Phone | 010-8631-5442 <br><br>
+            Made by Dahee Ahn
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- js -->
+  <script src="{% static 'js/jquery.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/jquery.smooth-scroll.min.js' %}"></script>
+  <script src="{% static 'js/jquery.dlmenu.js' %}"></script>
+  <script src="{% static 'js/wow.min.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+  <script src="{% static 'contactform/contactform.js' %}"></script>
+
+</body>
+
+</html>
